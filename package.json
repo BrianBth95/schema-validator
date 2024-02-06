@@ -1,0 +1,14 @@
+{
+  "name": "schema-validator",
+  "version": "1.0.0",
+  "description": "A simple object schema validator",
+  "main": "src/validator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "author": "Brian Botha",
+  "license": "MIT"
+}
