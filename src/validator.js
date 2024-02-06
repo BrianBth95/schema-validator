@@ -2,17 +2,24 @@ class Validator {
     #typeValidator;
 
     constructor() {
+        // Check if the value is a string
         this.#typeValidator = new Map([
             ['string', value => typeof value === 'string'],
+            // Check if the value is a number and not NaN
             ['number', value => typeof value === 'number' && !isNaN(value)],
+            // Check if the value is an array
             ['array', value => Array.isArray(value)],
+            // Check if the value is an object (excluding arrays) and not null
             ['object', value => typeof value === 'object' && value !== null && !Array.isArray(value)],
+            // Check if the value is a boolean
             ['boolean', value => typeof value === 'boolean'],
+            // Check if the value is null
             ['null', value => value === null],
+            // Check if the value is undefined
             ['undefined', value => value === undefined]
         ]);
     }
-
+    
     /**
      * Validates an object against a schema.
      * @param {object} schema - The schema object containing property types.
