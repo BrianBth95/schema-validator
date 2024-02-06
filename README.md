@@ -15,10 +15,10 @@ The `Validator` class leverages JavaScript's object-oriented features and the `M
 To run the Validator project locally, follow these steps:
 
 1. Clone the repository:
-   git clone <repository-url>
+   git clone https://github.com/BrianBth95/schema-validator.git
 
 2. Navigate to the project directory:
-   cd validator-project
+   cd schema-validator
 
 3. Install dependencies:
    npm install
